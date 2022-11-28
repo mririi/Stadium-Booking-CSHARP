@@ -1,0 +1,15 @@
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.csproj.AssemblyReference.cache
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.csproj.SuggestedBindingRedirects.cache
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.Properties.Resources.resources
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.csproj.GenerateResource.cache
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.csproj.CoreCompileInputs.cache
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\bin\Debug\StadiumReservation.exe.config
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\bin\Debug\StadiumReservation.exe
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\bin\Debug\StadiumReservation.pdb
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.exe
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.pdb
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.Login.resources
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.Register.resources
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.Reservation.resources
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.StadiumOwnerHome.resources
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.PlayerHome.resources
