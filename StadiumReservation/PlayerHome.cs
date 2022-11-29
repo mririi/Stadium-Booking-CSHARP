@@ -24,7 +24,13 @@ namespace StadiumReservation
             Reservation screen = new Reservation();
             screen.user = user;
             screen.Show();
-            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PlayerProfile screen = new PlayerProfile();
+            screen.user = user;
+            screen.Show();
         }
     }
 }

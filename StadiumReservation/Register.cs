@@ -23,6 +23,14 @@ namespace StadiumReservation
 
         private void Signup_Click(object sender, EventArgs e)
         {
+            SqlDataAdapter cmd2 = new SqlDataAdapter("select * from [User] where email='"+emailbox.Text+"'", con);
+            DataTable dtable2 = new DataTable();
+            cmd2.Fill(dtable2);
+            if(dtable2.Rows.Count>0)
+            {
+                MessageBox.Show("Email Already exists");
+                return;
+            }
             if (emailbox.Text == "" || username.Text == "" || firstname.Text == "" || lastname.Text == "" || address.Text == "" || tel.Text == "")
             {
                 MessageBox.Show("Can't be empty");
@@ -44,7 +52,23 @@ namespace StadiumReservation
             }
             try
             {
-                SqlCommand cmd = new SqlCommand("insert into [User] (email,password,lastname,firstname,username,address,tel,owner,IDTeam) values (@email,@password,@lastname,@firstname,@username,@address,@tel,@owner,@IDTeam)", con);
+                if (checkBox1.Checked)
+                {
+                    SqlCommand cmd = new SqlCommand("insert into [User] (email,password,lastname,firstname,username,address,tel,owner) values (@email,@password,@lastname,@firstname,@username,@address,@tel,@owner)", con);
+                    cmd.Parameters.AddWithValue("@email", emailbox.Text);
+                    cmd.Parameters.AddWithValue("@password", passwordbox.Text);
+                    cmd.Parameters.AddWithValue("@firstname", firstname.Text);
+                    cmd.Parameters.AddWithValue("@lastname", lastname.Text);
+                    cmd.Parameters.AddWithValue("@username", username.Text);
+                    cmd.Parameters.AddWithValue("@address", address.Text);
+                    cmd.Parameters.AddWithValue("@tel", tel.Text);
+                    cmd.Parameters.AddWithValue("@owner", 1);
+                    con.Open();
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    SqlCommand cmd = new SqlCommand("insert into [User] (email,password,lastname,firstname,username,address,tel,owner,IDTeam) values (@email,@password,@lastname,@firstname,@username,@address,@tel,@owner,@IDTeam)", con);
                 cmd.Parameters.AddWithValue("@email", emailbox.Text);
                 cmd.Parameters.AddWithValue("@password", passwordbox.Text);
                 cmd.Parameters.AddWithValue("@firstname", firstname.Text);
@@ -56,16 +80,10 @@ namespace StadiumReservation
                 DataTable dtable1 = new DataTable();
                 cmd1.Fill(dtable1);
                 cmd.Parameters.AddWithValue("@IDTeam", dtable1.Rows[0][0].ToString());
-                if (checkBox1.Checked)
-                {
-                    cmd.Parameters.AddWithValue("@owner", 1);
-                }
-                else if (!checkBox1.Checked)
-                {
-                    cmd.Parameters.AddWithValue("@owner", 0);
-                }
+                cmd.Parameters.AddWithValue("@owner", 0);
                 con.Open();
                 cmd.ExecuteNonQuery();
+                }
                 Login signIn = new Login();
                 signIn.Show();
                 this.Hide();

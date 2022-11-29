@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyStadiums.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyStadiums.Designer.cs">
+      <DependentUpon>MyStadiums.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlayerHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PlayerHome.Designer.cs">
       <DependentUpon>PlayerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerProfile.Designer.cs">
+      <DependentUpon>PlayerProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="Reservation.cs">
       <SubType>Form</SubType>
@@ -78,8 +90,20 @@
     <Compile Include="StadiumOwnerHome.Designer.cs">
       <DependentUpon>StadiumOwnerHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="StadiumOwnerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StadiumOwnerProfile.Designer.cs">
+      <DependentUpon>StadiumOwnerProfile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MyStadiums.resx">
+      <DependentUpon>MyStadiums.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PlayerHome.resx">
       <DependentUpon>PlayerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerProfile.resx">
+      <DependentUpon>PlayerProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reservation.resx">
       <DependentUpon>Reservation.cs</DependentUpon>
@@ -101,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StadiumOwnerHome.resx">
       <DependentUpon>StadiumOwnerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StadiumOwnerProfile.resx">
+      <DependentUpon>StadiumOwnerProfile.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

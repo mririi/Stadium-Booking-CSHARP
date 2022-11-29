@@ -25,5 +25,19 @@ namespace StadiumReservation
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MyStadiums myStadiums = new MyStadiums();
+            myStadiums.user = user;
+            myStadiums.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            StadiumOwnerProfile myStadiumProfile = new StadiumOwnerProfile();
+            myStadiumProfile.user = user;
+            myStadiumProfile.Show();
+        }
     }
 }

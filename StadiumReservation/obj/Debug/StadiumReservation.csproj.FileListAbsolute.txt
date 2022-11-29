@@ -13,3 +13,6 @@ C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\Sta
 C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.Reservation.resources
 C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.StadiumOwnerHome.resources
 C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.PlayerHome.resources
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.MyStadiums.resources
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.PlayerProfile.resources
+C:\Users\Wassim\source\repos\StadiumReservation\StadiumReservation\obj\Debug\StadiumReservation.StadiumOwnerProfile.resources
